@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+.saison {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    background: url('images/hiver.jpeg') no-repeat;
+    background-size: 100%;
+}
+
+.saison-animation {
+    animation: kenburns-top 3s ease-out both;
+}
+
+.saison-info {
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.saisons {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(60, 60, 151);
+    width: 100%;
+    text-align: center;
+    height: 10%;
+}
+
+.btn {
+    background-color: rgb(60, 60, 151);
+    color: white;
+    border: 4px solid rgb(60, 60, 151);
+    width: 25%;
+    font-size: 20px;
+}
+
+.btn:hover {
+    border-color: white;
+    font-weight: bold;
+}
+
+.btn-active {
+    background-color: white;
+    color:rgb(60, 60, 151);
+    border-color: white;
+    animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-hor-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        opacity: 1;
+    }
+}
+@keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+  /**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+}
+@keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+                transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+                transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+    }
+}
+  
+  
